@@ -1,0 +1,90 @@
+body {
+    background-color: #FFF1F6;  /* color de fondo */
+    font-family: 'Raleway', sans-serif;
+    margin = 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #BAB7B1;
+     transition: color 0.56s;
+}
+
+@font-face{
+    font-family: "Ultra";
+    src: url(../Estilo/Fuentes/Ultra.otf) format('opentype');
+}
+
+@font-face {
+font-family: "Ailerons";
+src: url(../Estilo/Fuentes/Ailerons-Typeface.otf) format('opentype');
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40%;
+    padding: 0;
+    margin: 0;
+    /*background-color: #CD4A00;*/
+   /* background:  radial-gradient(ellipse farthest-corner at 45px 45px, #56AAE8, white)*/
+    background:  radial-gradient(ellipse closest-corner, #343739, white);
+}
+
+ul {
+
+    float: none;
+    position: absolute;
+    list-style-type: none; /*para ocultar los puntos de la lista */
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    bottom: 0;
+    left: 20%;
+    rigth: 25%;
+  /*  top: 20%;
+    left: 0;
+    right: 0;
+    padding: 0;
+     */
+  /*  display:flex;
+    overflow: hidden;*/
+ /*   background-color: #343434;*/
+  
+}
+
+li {
+    position align-items: center;
+    float: left;
+}
+
+li a {
+    font-size: 20px;
+    font-family: Ailerons;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    opacity: 100;
+    background-color: #E3DFD7;
+}
+
+#titulo {
+    font-family: Ultra   ;
+    margin-left: 35%; 
+    margin-top: 0%;
+    position align-items: center;
+    font-size: 100px;
+
+}
