@@ -1,20 +1,3 @@
-body {
-    background-color: #FFF1F6;  /* color de fondo */
-    font-family: 'Raleway', sans-serif;
-    margin = 0;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover
-{
-    color: #BAB7B1;
-     transition: color 0.56s;
-}
-
 @font-face{
     font-family: "Ultra";
     src: url(../Estilo/Fuentes/Ultra.otf) format('opentype');
@@ -25,6 +8,12 @@ font-family: "Ailerons";
 src: url(../Estilo/Fuentes/Ailerons-Typeface.otf) format('opentype');
 }
 
+body {
+    background-color: #FFF1F6;  /* color de fondo */
+    font-family: 'Raleway', sans-serif;
+    margin = 0;
+}
+
 .header {
     position: fixed;
     left: 0;
@@ -33,12 +22,72 @@ src: url(../Estilo/Fuentes/Ailerons-Typeface.otf) format('opentype');
     height: 40%;
     padding: 0;
     margin: 0;
-    /*background-color: #CD4A00;*/
-   /* background:  radial-gradient(ellipse farthest-corner at 45px 45px, #56AAE8, white)*/
-    background:  radial-gradient(ellipse closest-corner, #343739, white);
+    background-image: linear-gradient(#339999,black);
+    /*#F3F4F7*/
 }
 
-ul {
+ul.menu {
+    list-style: none; /*para ocultar los puntos de la lista */
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    width: 60%;
+    overflow: hidden;
+    
+}
+
+ul.menu li{
+    background: #294A55;
+    float: left;    
+    margin-top: 163px;
+   
+}
+
+ul.menu li a{
+    color: white;
+    display: block;
+    padding: .3em;
+    text-decoration: none;
+    border-left: 1.2px solid black;
+    border-right: 1.2px solid black;
+}
+
+#logo {
+    width:150px;
+    height:141px;
+    margin-top: 30px;
+    margin-left: 3%;
+}
+
+.active{
+    background: #990000;
+}
+
+ul.menu li a:hover:not(.active) {
+    opacity: 100;
+    background-color: #BAD8F1;
+    color: #294A55;
+} 
+
+
+/*a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #BAB7B1;
+     transition: color 0.56s;
+}*/
+
+
+
+
+
+/*ul {
 
     float: none;
     position: absolute;
@@ -58,9 +107,9 @@ ul {
     overflow: hidden;*/
  /*   background-color: #343434;*/
   
-}
+}*/
 
-li {
+/*li {
     position align-items: center;
     float: left;
 }
@@ -78,7 +127,7 @@ li a {
 li a:hover:not(.active) {
     opacity: 100;
     background-color: #E3DFD7;
-}
+} 
 
 #titulo {
     font-family: Ultra   ;
@@ -87,4 +136,4 @@ li a:hover:not(.active) {
     position align-items: center;
     font-size: 100px;
 
-}
+} */
