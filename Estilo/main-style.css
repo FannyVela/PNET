@@ -120,15 +120,28 @@ ul.menu li a:hover:not(.active) {
 }
 
 #sectores{
-    height: 500px; 
+    height: 1000px; 
     position: static;
     background-image: linear-gradient(#b0bbbf,#FFFFFF);
 }
 
 #footer{
+    position: absolute;
     width: 100%;
-    height: 150px;
-    background-image: linear-gradient(#339999,#F3F4F7);
+    height: 300px;
+    background-image: linear-gradient(#F3F4F7,#339999);
+}
+
+#texto-secun2{
+    text-align: center;
+    font-family: sans-serif;
+    padding: 0;
+}
+
+#logo3{
+    float: left;
+    margin-top: 125px;
+    margin-left: 3%;
 }
 
 
