@@ -29,9 +29,8 @@
     margin-top: 10px;
     color: #993300;
 }
-
 #sectores{
-    height: 1000px; 
+    height: 600px; 
     position: static;
     background-image: linear-gradient(#b0bbbf,#FFFFFF);
 }
