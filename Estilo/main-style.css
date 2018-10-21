@@ -83,13 +83,6 @@ ul.menu li a:hover:not(.active) {
     margin-top: 100px;
 }
 
-#menu-zarvahe{
-    float:left;
-    clear:both;
-    padding: 0;
-    margin: 0;
-}
-
 #bienvenida{
     position:static;
     background-image: url('../Imagenes/robothd.jpg');   

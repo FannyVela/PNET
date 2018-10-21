@@ -3,6 +3,17 @@
     src: url(../Estilo/Fuentes/Marske.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: "Anurati";
+    src: url(../Estilo/Fuentes/Anurati-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: "Elianto";
+    src: url(../Estilo/Fuentes/Elianto-Regular.ttf) format('truetype');
+}
+
+
 #bienvenida{
     position:static;
     background-image: url('../Imagenes/robothd.jpg');   
@@ -13,7 +24,7 @@
 }
 
 #texto-ppal{
-    font-family: Marske;
+    font-family: Elianto;
     font-size: 4.5em;
     text-align: center;
     color: #990000;
@@ -22,15 +33,44 @@
     margin-left: 30px;
 }
 
-#texto-secun{
-    text-align: center;
-    font-family: Marske;
-    padding: 0;
-    margin-top: 10px;
-    color: #993300;
-}
 #sectores{
     height: 600px; 
     position: static;
-    background-image: linear-gradient(#b0bbbf,#FFFFFF);
+    background-image: linear-gradient(#FFFFFF,#b0bbbf);
+}
+
+#introduccion{
+    background-image: linear-gradient(#F1F4F7, #FFFFFF);
+    height: 600px;
+    
+}
+
+#titulo{
+    font-size: 24px;
+    text-align: center;
+}
+
+.texto-titulo{
+    margin:0;
+}
+
+#imagen-introduccion{
+    float:left;
+    margin-top: 60px;
+    width: 33%;
+    text-align: center;
+}
+
+#descripcion-introduccion{
+    float:left;
+    margin-top: 60px;
+    width: 60%;
+}
+
+p{
+    text-align: justify;
+}
+
+#subtitulo{
+    color: #73777A;
 }
