@@ -88,19 +88,12 @@ ul.menu li a:hover:not(.active) {
     background-image: url('../Imagenes/robothd.jpg');   
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 99%;
     height: 400px;
 }
 
 .active{
     background: #990000;
-}
-
-
-#sectores{
-    height: 1000px; 
-    position: static;
-    background-image: linear-gradient(#b0bbbf,#FFFFFF);
 }
 
 #footer{

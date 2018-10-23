@@ -34,14 +34,17 @@
 }
 
 #sectores{
-    height: 600px; 
+    height: 530px; 
     position: static;
-    background-image: linear-gradient(#FFFFFF,#b0bbbf);
-}
+    text-align: center;
+    font-size: 24px;
+    background-image: linear-gradient(#FFFFFF,#F1F4F7);
+    margin: 0;
+} 
 
 #introduccion{
     background-image: linear-gradient(#F1F4F7, #FFFFFF);
-    height: 600px;
+    height: 650px;
     
 }
 
