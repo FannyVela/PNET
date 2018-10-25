@@ -1,0 +1,85 @@
+.carousel-item {
+  height: 80vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-caption{
+    top:30%;
+    bottom: auto;s
+}
+
+#introduccion{
+    position: relative;
+    background-image: linear-gradient(#F1F4F7, #FFFFFF);
+    height: 650px;
+    z-index: -1;
+    
+}
+
+#titulo{
+    font-size: 24px; 
+    text-align: center;
+}
+
+.texto-titulo{
+    margin:0;
+}
+
+#sectores{
+    height: 640px; 
+    background-image: linear-gradient(#FFFFFF, #F1F4F7);
+    position: relative;
+    text-align: center;
+    font-size: 24px;    
+    margin: 0;
+    z-index: 1;
+} 
+
+#imagen-introduccion{
+    float:left;
+    margin-top: 60px;
+    width: 33%;
+    text-align: center;
+}
+
+#descripcion-introduccion{
+    float:left;
+    margin-top: 50px;
+    width: 60%;
+}
+
+#subtitulo{
+    color: #990000;
+}
+
+h1{
+    font-size: 45px;
+    color: #990000;
+
+}
+
+.texto{
+    color:black;
+}
+
+.w-100{
+    opacity: 0.7;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.footer{
+    text-align: center;
+}
+
+#logo2{
+    width:120px;
+}
+
+.m-0{
+    font-size: 11px;
+}

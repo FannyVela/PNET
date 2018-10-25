@@ -1,122 +1,162 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>X Congreso de Robótica 2018</title>
-      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-      <meta charset="UTF-8">
-      <link rel="stylesheet" type="text/css" href="Estilo/main-style.css">
-      <link rel="stylesheet" type="text/css" href="Estilo/index-style.css">
-   </head>
-
-   <body>
-      
-        <div class="grid-100 header">
-            <div id="logo">
-                <img src="Imagenes/logoo.png" />
-              
-            </div>
-            
-            <div id = logo2>
-                <img src="Imagenes/logo2.png" style="margin-left: 19%; " />
-                <ul class = "menu">
-                    <li><a class="active" href="index.html">INICIO</a></li>
-                    <li><a href="inscripcion.html">INSCRIPCIÓN</a></li>
-                    <li><a href="programa.html">PROGRAMACIÓN</a></li>
-                    <li><a href="localizacion.html">LOCALIZACIÓN</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-            </div>
-            
-            <div id="fecha">
-               <img src="Imagenes/FechaPNET.png" />
-            </div>
-        </div>
-       
-        <div id="bienvenida">       
-            <h1 id="texto-ppal">
-                SALON <br>INTERNACIONAL<br>DE<br>ROBOTICA
-            </h1>
-        </div>
-       
-        <div id="introduccion">
-            <div id = "titulo">
-                <br><br>
-                <h2 class= "texto-titulo">SIR 2019</h2>
-                <h3 class = "texto-titulo">Salón Internacional de Robótica</h3>
-                <h4 class = "texto-titulo">World Congress & Exhibition in Barcelona, Spain</h4>
-            </div>
-                
-            <div id="imagen-introduccion">  
-                <img src="Imagenes/ces-2018-trends.jpg">
-            </div>
-            
-            <div id = "descripcion-introduccion">
-                <h3 id="subtitulo">¿QUÉ ES SIR 2019?</h3>
-                <p>
-                    El Salón Internacional de Robótica (SIR) es una de los mayores eventos celebrados en el mundo dedicado al campo de la robótica y tecnolgías afínes para empresas, investigadores y usuarios finales. Se llevará a cabo en L'Hospitalet de Llobregat, Barcelona, del 7 al 9 de mayo de 2019. El lugar de celebración será en la institución ferial de Barcelona, la Fira, una de las instituciones feriales más importantes de Europa por su actividad, recintos, experiencia y liderazgo.
-                </p>
-                
-                <p>
-                    El SIR 2019 brinda la oportunidad de conocer los últimos avances y descubrimientos tecnológicos en el campo de la robótica. Incluirá además una gran serie de conferencias orales e interactivas por parte de expertos reconocidos mundialmente, concursos, talleres y exposiciones con demostraciones en vivo.<br> 
-                </p>
-                
-                <p>
-                    El objetivo de este gran evento mundial es dar a conocer los grandes avances que ha habido en este campo y el impacto que tendrá en el mundo en un futuro muy próximo ya que la robótica está comenzando a dejar de ser una temática de futuro para convertirse en una temática del presente.<br><br>
-                    Le invitamos a asistir a este evento único donde miles de personas se reunen cada año.
-                </p>
-                
-
-            </div>
-
-        </div>
-       
-       <div id = "sectores">
-		    <h3 class = "texto-titulo">Sectores</h3>
-			<img src="Imagenes/circulos.png" />
-		
-        </div>
-       
-        <footer id="footer">
-            <h3 style="margin-left: 550px; margin-top: 30px;">
-                Información de interés
-            </h3>
-          
-        <div class="info">
-            <div class="titulo-info" style= "margin-left: 150px;">
-             Organizador
-            </div>
-            <div class="titulo-info">
-             Dirección
-            </div>
-            <div class="titulo-info">
-             Fecha y Hora
-            </div>            
-            <div class="titulo-info">
-             Contacto
-            </div>            
-        </div>
-          
-        <div class="info" style="margin-top: 15px;">
-            <div class="descripcion-info" style="margin-left: 152px;">
-             Robot Inno S.L.
-            </div>
-            <div class="descripcion-info">
-             Av. Joan Carles I, 64<br><br>  08908 L'Hospitalet de Llobregat, Barcelona
-            </div>
-            <div class="descripcion-info" style="margin-left: 120px;" >
-             7-9 Mayo <br><br>10:00-20:00
-            </div>            
-            <div class="descripcion-info" style="margin-left: 207px;">
-             <a href="contacto.html" style="color:#990000; text-decoration: none;">Contacta</a><br> con nosotros
-            </div>            
-        </div> 
-          
-        <div id="LogoFinal">
-            <img id="logo-style"src="Imagenes/logoFinal.png">
-        </div>
-          
-    </footer>
-       
-   </body>
+<head lang=es>
+    <meta charset="utf-8">
+    <meta name="author" content="Fanny Chunyan Vela Diaz, Antonio Rivas Macias">
+    <meta name="description" content = "Congreso de Robotica">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- para moviles -->
     
+    <!--css de Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384 MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <script src="js/bootstrap.js"></script>
+    
+    <!--css local-->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    
+    <title>SIR 2019</title>
+</head>
+    
+<body>
+     <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Imagenes/logo.png" alt="Logo" style="width:40px;">
+            </a>
+              
+            <a class="navbar-brand" href="index.html">SIR 2019</a>
+              
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+              
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">INICIO
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="inscripcion.html">INSCRIPCIÓN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="programa.html">PROGRAMACIÓN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="localizacion.html">LOCALIZACIÓN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+            </div>
+              
+          </div>
+      </nav>
+    
+    <div id="carrusel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+            <li data-target="#carrusel" data-slide-to="1"></li>
+            <li data-target="#carrusel" data-slide-to="2"></li>
+            <li data-target="#carrusel" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="Imagenes/robothd.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Salón Internacional</h1>
+                    <h1>de Robótica 2019</h1>
+                    <p class = "texto">&#xf073; 7-9 Mayo 2019</p>
+                    <p class="texto">	&#xf277; Av. Joan Carles I, 64,08908 L'Hospitalet de Llobregat, Barcelona</p>
+                    
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="Imagenes/congreso1.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Salón Internacional</h1>
+                    <h1>de Robótica 2019</h1>
+                    <p class="texto">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="Imagenes/congreso3.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Salón Internacional de Robótica 2019</h1>
+                    <p class="texto">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="Imagenes/congreso2.jpg" alt="Fourth slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Salón Internacional de Robótica 2019</h1>
+                    <p class="texto">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carrusel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carrusel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+    
+    <div id="introduccion">
+        <div id = "titulo">
+            <br><br>
+            <a name="sobreNosotros"></a>
+            <h2 class = "texto-titulo">Salón Internacional de Robótica</h3>
+            <h3 class = "texto-titulo">World Congress & Exhibition in Barcelona, Spain</h4>
+        </div>
+                
+        <div id="imagen-introduccion">  
+            <img src="Imagenes/robot.jpg">
+        </div>
+            
+        <div id = "descripcion-introduccion">
+            <h3 id="subtitulo">¿QUÉ ES SIR 2019?</h3>
+            <p>
+                El Salón Internacional de Robótica (SIR) es una de los mayores eventos celebrados en el mundo dedicado al campo de la robótica y tecnolgías afínes para empresas, investigadores y usuarios finales. Se llevará a cabo en L'Hospitalet de Llobregat, Barcelona, del 7 al 9 de mayo de 2019. El lugar de celebración será en la institución ferial de Barcelona, la Fira, una de las instituciones feriales más importantes de Europa por su actividad, recintos, experiencia y liderazgo.
+            </p>
+
+            <p>
+                El SIR 2019 brinda la oportunidad de conocer los últimos avances y descubrimientos tecnológicos en el campo de la robótica. Incluirá además una gran serie de conferencias orales e interactivas por parte de expertos reconocidos mundialmente, concursos, talleres y exposiciones con demostraciones en vivo.<br> 
+            </p>
+
+            <p>
+                El objetivo de este gran evento mundial es dar a conocer los grandes avances que ha habido en este campo y el impacto que tendrá en el mundo en un futuro muy próximo ya que la robótica está comenzando a dejar de ser una temática de futuro para convertirse en una temática del presente.<br>
+                Le invitamos a asistir a este evento único donde miles de personas se reunen cada año.
+            </p>           
+        </div>
+    </div>
+    
+    <div id = "sectores"><a name="sectores"></a>
+        <h2 class = "texto-titulo">Sectores</h3>
+        <br>
+        <img src="Imagenes/circulos.png" />
+    </div>
+    
+    <footer class="py-5 bg-dark">
+      <div class="container footer">
+        <img src="Imagenes/logo2.png" id = "logo2" alt="Logo" >
+        <p class="m-0 text-center text-white"> &copy; 2019 by SIR 2019</p>
+      </div>
+    </footer> 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
 </html>
