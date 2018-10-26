@@ -12,7 +12,9 @@
     <script src="js/bootstrap.js"></script>
     
     <!--css local-->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/localizacion.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     
     <title>SIR 2019</title>
 </head>
@@ -30,19 +32,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="index.html">INICIO
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="inscripcion.html">INSCRIPCIÓN</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="programa.html">PROGRAMACIÓN</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="localizacion.html">LOCALIZACIÓN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inscripcion.html">INSCRIPCIÓN</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contacto.html">CONTACTO</a>
@@ -53,15 +55,36 @@
     </nav>
     
 
-    
-    <div style="height: 600px;">
-    
-    
+    <div id = "contenedor">
+        <h1 id="titulo">LUGAR DE CELEBRACIÓN</h1>
+        <div id = "fira">
+
+            <img  src="Imagenes/fira-de-barcelona.png"><br><br><br>
+            <img src = "Imagenes/firaa.jpg"><br><br><br>
+            <p>         
+                Constituida en 1932, Fira organiza y acoge cada año salones y congresos que abarcan los principales sectores de la economía, además de numerosos eventos de carácter corporativo, social y cultural. Cuenta con dos grandes recintos y ofrece a expositores, organizadores y visitantes todos los recursos de una entidad moderna y eficiente.
+            </p>
+            <p>
+                Es hoy una de las más importantes organizaciones feriales de Europa y su prestigio internacional va estrechamente ligado a la marca Barcelona, ciudad con más de un siglo de tradición ferial. Cuenta con una red de delegaciones por todo el mundo y es miembro de las grandes asociaciones feriales internacionales.
+            </p>
+            <p>
+                En el marco de su responsabilidad corporativa, desarrolla una actividad basada en la sostenibilidad, el respeto por el medio ambiente y el apoyo a diversas iniciativas solidarias.ss
+            </p>
+        </div>
+
+
+
+        <div id = "map">
+          <iframe width="1000" height="300" src="https://maps.google.com/maps?width=720&height=600&hl=es&coord=41.3548956,2.1244007&q=Av.%20Joan%20Carles%20I%2C%2064+(Fira%20Barcelona)&ie=UTF8&t=&z=14&iwloc=A&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+
+        </div>
     </div>
     
     <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+      <div class="container footer">
+        <img src="Imagenes/logo2.png" id = "logo2" alt="Logo" >
+        <p class="m-0 text-center text-white"> &copy; 2019 by SIR 2019</p>
       </div>
     </footer> 
 
@@ -74,5 +97,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
 </body>
 </html>

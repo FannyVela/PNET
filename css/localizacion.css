@@ -1,0 +1,31 @@
+#contenedor{
+    height: 1600px;
+    width: auto;
+    background: url(../Imagenes/fondo1.jpg); 
+    overflow: auto;
+    text-align: center;
+}
+
+#titulo{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 130px;
+
+}
+
+#fira{
+   margin-top: 3%;
+   
+}
+
+p{
+   text-align: justify;
+   width: 1000px;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+#map{
+   margin-left: 3%;
+   margin-top: 4%;
+}

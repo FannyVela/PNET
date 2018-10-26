@@ -60,6 +60,7 @@
 h1{
     font-size: 45px;
     color: #990000;
+    font-weight: 700;
 
 }
 
@@ -76,10 +77,21 @@ h1{
     text-align: center;
 }
 
-#logo2{
-    width:120px;
-}
-
 .m-0{
     font-size: 11px;
+}
+
+.icon {
+  width: 13px;
+  height: 13px;
+  color: #990000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 40px;
+  width: 40px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-color: grey;
 }
