@@ -1,5 +1,5 @@
 #contenedor{
-    height: 1600px;
+    height: 1500px;
     width: auto;
     background: url(../Imagenes/fondo1.jpg); 
     overflow: auto;
@@ -28,4 +28,16 @@ p{
 #map{
    margin-left: 3%;
    margin-top: 4%;
+}
+
+.logo{
+    width: 10%;
+    height: 7%;
+    float:left;
+    margin-left: 10%;
+}
+
+#logo_style{
+    margin-top: 2%;
+    margin-left: 35%;
 }
