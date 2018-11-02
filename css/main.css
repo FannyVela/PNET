@@ -26,6 +26,13 @@
   display: block;
 }
 
+.enlace{
+    color: #238A9D;
+}
+
+.enlace:hover{
+    color: white;
+}
 /*ul li{
 list-style-type:none;
 display: inline;

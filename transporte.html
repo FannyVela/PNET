@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     
-    <title>SIR 2019</title>
+    <title>SIR 2019 - Transporte</title>
 </head>
     
 <body>
@@ -71,10 +71,11 @@
     </nav>
     
 
-    <div id = "contenedor">
+    <div class = "contenedor">
         <h1 class="titulo">TRANSPORTE</h1><br><br>
-        <img src="Imagenes/plano-transporte.JPG"><hr/>
+        <img id = "img-plano" src="Imagenes/plano-transporte.JPG"><hr/>
         <div id = "information-transport">
+            <br>
             <h6>Metro</h6>
             <p class = "transport-description">
                 L9 Sud de TMB (estaciones "Fira" y "Europa / Fira"). <br><br>
@@ -111,7 +112,7 @@
             <p class = "transport-description">
                 - Ferrocarrils Generalitat de Catalunya (FGC)<br>
                     Líneas S8, S33, R6, R5, S4 (estación "Europa / Fira"). <br><br>
-                 <a href="https://www.fgc.cat/" class="myButton">Más información</a><br>
+                 <a href="https://www.fgc.cat/" class="myButton">Más información</a><br><br>
                 - Renfe<br>
                     La estación "Barcelona-Sants", a 4 km de distancia del recinto ferial, conecta con una completa red ferroviaria regional, nacional e internacional.<br><br>
                  <a href="http://www.renfe.com/" class="myButton">Más información</a><br>
@@ -129,13 +130,15 @@
            
 
     
-    <footer class="py-5 bg-dark" style>
+    <footer class="py-5 bg-dark">
       <div class="container footer">
-        <img src="Imagenes/logo2.png" id = "logo2" alt="Logo" >
-        <p class="m-0 text-center text-white"> &copy; 2019 by SIR 2019</p>
+        <p class="m-0 text-center text-white">
+            <a class = "enlace" href="contacto.html">Contáctanos</a><br>
+            <a class = "enlace" href = "mailto:robotInno@corporation.com">robotInno@corporation.com</a><br>
+            &copy; 2019 by SIR 2019
+        </p>
       </div>
-    </footer> 
-
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
