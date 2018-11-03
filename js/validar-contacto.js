@@ -39,7 +39,7 @@ function validar()
 		return false;
 	}
 	
-	if(!expregTlf.test(tlf))
+	if(!expregTlf.test(tlf) && tlf != "")
 	{
 		alert("Teléfono inválido.");
 		return false;

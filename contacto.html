@@ -85,44 +85,44 @@
 
 			<form class="contact100-form" name = "formulario" onsubmit="return validar();">
 				<div class="wrap-input100 " >
-					<span class="label-input100">*Nombre:</span>
-					   <input class="input100" type="text" id="name" placeholder="Introduzca su nombre" required>
+                       <label for="name" class="label-input100">*Nombre:</label>
+					   <input class="input100" type="text" name="name" id="name" placeholder="Introduzca su nombre" required>
 					<span class="focus-input100"></span>
 				</div>
                 
 				<div class="wrap-input100 " >
-					<span class="label-input100">*Apellido 1:</span>
-					   <input class="input100" type="text" name="surname1" placeholder="Introduzca su primer apellido" required>
+					<label for="surname1" class="label-input100">*Apellido 1:</label>
+					   <input class="input100" type="text" name="surname1" id="surname1" placeholder="Introduzca su primer apellido" required>
 					<span class="focus-input100"></span>
 				</div>
             
 				<div class="wrap-input100">
-					<span class="label-input100">Apellido 2:</span>
-					   <input class="input100" type="text" name="surname2" placeholder="Introduzca su segundo apellido" >
+                    <label for="surname2" class="label-input100">Apellido 2:</label>
+					   <input class="input100" type="text" name="surname2" id="surname2" placeholder="Introduzca su segundo apellido" >
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100" >
-					<span class="label-input100">*Correo:</span>
-					   <input class="input100" type="text" name="email" placeholder="name@example.com" required>
+                    <label for="email" class="label-input100">*Correo:</label>
+					   <input class="input100" type="text" name="email" id="email" placeholder="name@example.com" required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 ">
-					<span class="label-input100">Teléfono:</span>
-					   <input class="input100" type="text" name="phone" placeholder="Introduzca un número de teléfono.">
+                    <label for="phone" class="label-input100">Teléfono:</label>
+					   <input class="input100" type="text" name="phone" id="phone" placeholder="Introduzca un número de teléfono.">
 					<span class="focus-input100"></span>
 				</div>
                 
 				<div class="wrap-input100 " >
-					<span class="label-input100">*Asunto:</span>
-					   <input class="input100" type="text" name="subject" placeholder="Escriba un asunto" >
+                    <label for="subject" class="label-input100">*Asunto:</label>
+					   <input class="input100" type="text" name="subject" id="subject" placeholder="Escriba un asunto" >
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 ">
-					<span class="label-input100">*Mensaje:</span>
-					   <textarea class="input100" name="message" placeholder="Tu mensaje..." ></textarea>
+                    <label for="message" class="label-input100">*Mensaje:</label>
+					   <textarea class="input100" name="message" id="message" placeholder="Tu mensaje..." ></textarea>
 					<span class="focus-input100"></span>
 				</div>
 
@@ -130,7 +130,7 @@
 					<button class="contact100-form-btn" type="submit" value = "submit" name="submit">
 						<span>
 							Enviar
-							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							<em class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></em>
 						</span>
 					</button> 
 					
