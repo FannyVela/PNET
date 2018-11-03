@@ -20,6 +20,7 @@
 
 .description{
    margin-top: 3%;
+   margin-left: 40px;
 }
 
 .parraf{
@@ -30,8 +31,11 @@
 }
 
 #map{
-   margin-left: 3%;
    margin-top: 4%;
+}
+
+#map-iframe{
+    border:none;
 }
 
 #img-plano{

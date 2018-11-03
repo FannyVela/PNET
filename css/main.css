@@ -2,10 +2,6 @@
     width:120px;
 }
 
-.nav-item > a{
-    color: #990000; !important;
-}
-
 .dropdown-item{
     color: rgba(255,255,255,.5);
 }
@@ -33,15 +29,3 @@
 .enlace:hover{
     color: white;
 }
-/*ul li{
-list-style-type:none;
-display: inline;
-}*/
-
-/*.navbar-nav .nav-link{display:inline-block;}
-   
-.ml-auto {display:inline-block!important;}
-
-.dropdown>.dropdown-toggle:active {
-  pointer-events: none;
-}*/
