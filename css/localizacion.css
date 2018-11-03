@@ -32,6 +32,9 @@
 
 #map{
    margin-top: 4%;
+   width: 60%;
+   height: 100%;
+   margin-left: 20%;
 }
 
 #map-iframe{
