@@ -14,8 +14,11 @@
     <!--css local-->
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/inscripcion.css">
+	
+	
     
-    <title>SIR 2019 - Inscripción</title>
+    <title>SIR 2019 - Inscripcion</title>
 </head>
     
 <body>
@@ -69,13 +72,97 @@
       </div>
     </nav>
     
+		<div class="wrap-contact100">
+			<div class="contact100-form-title" style="background-image: url(../PNET/Imagenes/bg-01.jpg);">
+				<span class="contact100-form-title-1">
+					Inscribase para asistir
+				</span>
 
-    
-    <div style="height: 600px;">
-    
-    
-    </div>
-    
+				<span class="contact100-form-title-2">
+					Rellene la inscripción con sus datos.<br> Recuerde escoger su tarifa.
+				</span>
+			</div>
+
+			<form class="contact100-form" name = "formulario" onsubmit="return validar();">
+				<div class="wrap-input100 " >
+                       <label for="name" class="label-input100">*Nombre:</label>
+					   <input class="input100" type="text" name="name" id="name" placeholder="Introduzca su nombre" required>
+					<span class="focus-input100"></span>
+				</div>
+                
+				<div class="wrap-input100 " >
+					<label for="surname1" class="label-input100">*Apellido 1:</label>
+					   <input class="input100" type="text" name="surname1" id="surname1" placeholder="Introduzca su primer apellido" required>
+					<span class="focus-input100"></span>
+				</div>
+            
+				<div class="wrap-input100">
+                    <label for="surname2" class="label-input100">Apellido 2:</label>
+					   <input class="input100" type="text" name="surname2" id="surname2" placeholder="Introduzca su segundo apellido" >
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 " >
+                       <label for="name" class="label-input100">*DNI/Nº Pasaporte:</label>
+					   <input class="input100" type="text" name="dni" id="dni" placeholder="Introduzca su dni" required>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100" >
+                    <label for="email" class="label-input100">*Correo:</label>
+					   <input class="input100" type="text" name="email" id="email" placeholder="name@example.com" required>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 ">
+                    <label for="phone" class="label-input100">Teléfono:</label>
+					   <input class="input100" type="text" name="phone" id="phone" placeholder="Introduzca un número de teléfono.">
+					<span class="focus-input100"></span>
+				</div>
+                
+				<div class="wrap-input100 " >
+                    <label for="subject" class="label-input100">*Nº de días:</label>
+					   <select name="dias">
+							<option value="1">1 Día</option> 
+							<option value="2">2 Días</option>
+							<option value="3">3 Días</option>
+						</select>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 ">
+                    <label for="message" class="label-input100">*Dia entrada:</label>
+					   <input type="date" class="input100" name="diaentrada" id="diaentrada" >
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 ">
+                    <label for="message" class="label-input100">*Dia salida:</label>
+					   <input type="date" class="input100" name="diasalida" id="diasalida" >
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 ">
+                    <label for="message" class="label-input100">*¿Eres prensa?:</label>
+					   <input type="checkbox" class="input100" name="prensa" id="prensa" >
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn" type="submit" value = "submit" name="submit">
+						<span>
+							Enviar
+							<em class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></em>
+						</span>
+					</button> 
+					
+				</div>
+			</form>
+		</div>
+		<div  align="center">
+			<img id="Tabla"src="Imagenes/tabla.png" >
+		</div>
+
     <footer class="py-5 bg-dark">
       <div class="container footer">
         <p class="m-0 text-center text-white">
@@ -95,5 +182,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="js/validar-contacto.js"></script>
+	
 </body>
 </html>
