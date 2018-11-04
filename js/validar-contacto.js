@@ -8,7 +8,6 @@ function validar()
 	var correo = formulario.email.value;
 	var tlf = formulario.phone.value;
 
-	var mensaje
 	var expreg = /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
 	
 	var expregCorreo = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/ ;
@@ -44,7 +43,9 @@ function validar()
 		alert("Teléfono inválido.");
 		return false;
 	}
-
+    
+    alert("Mensaje enviado con éxito.");
+    
 	return true;
 		
 }
