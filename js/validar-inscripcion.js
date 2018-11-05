@@ -1,3 +1,28 @@
+
+
+function fecha(dentrada, dsalida)
+{
+			var fechae = dentrada.split("/");
+			var fechas = dsalida.split("/");
+			var daye = fechae[0];
+			var days = fechas[0];
+			var monthe = fechae[1];
+			var months = fechas[1];
+			var yeare = fechae[2];
+			var years = fechas[2];
+			
+			
+	if(yeare != 2019 || years != 2019 || monthe != 5 || months != 5 || daye < 7 || daye > 9 || days < 7 || days > 9 || daye > days )
+	{
+
+		alert("Fecha de entrada y salida invalidas");
+		return false;
+	}
+	
+	return true;
+			
+}
+
 function validar()
 {
 	var formulario= document.getElementsByName("formulario")[0];
@@ -8,21 +33,12 @@ function validar()
 	var correo = formulario.email.value;
 	var tlf = formulario.phone.value;
 	var dni = formulario.dni.value;
+	var dentrada = formulario.diaentrada;
+	var dsalida = formulario.diasalida;
 	
+			
+
 	
-	
-	tengo que poner aqui la fecha y utilizar esta funcion para mirar si esta entre los dias bien
-	function existeFecha(fecha){
-      var fechaf = fecha.split("/");
-      var day = fechaf[0];
-      var month = fechaf[1];
-      var year = fechaf[2];
-      var date = new Date(year,month,'0');
-      if((day-0)>(date.getDate()-0)){
-            return false;
-      }
-      return true;
-}
 
 	var expreg = /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
 	
@@ -69,9 +85,16 @@ function validar()
 		alert("DNI/NIE inválido.");
 		return false;
 	}
-    
+	
+
+	if(!fecha(dentrada, dsalida))
+	{
+		return false;
+	}
+	
+	
     alert("Mensaje enviado con éxito.");
-    
+		
 	return true;
 		
 }
