@@ -17,7 +17,7 @@
 #introduccion{
     position: relative;
     background-image: linear-gradient(#F1F4F7, #FFFFFF);
-    height: 650px;
+    height: 700px;
     z-index: -1;
     
 }
@@ -41,17 +41,25 @@
     z-index: 1;
 } 
 
+.aside-noticias{
+    float:left;
+    margin-top: 20px;
+	margin-left: 70px;
+    width: 25%;
+    text-align: center;
+} 
+
 #imagen-introduccion{
     float:left;
-    margin-top: 60px;
-    width: 33%;
+    margin-top: 95px;
+    width: 30%;
     text-align: center;
 }
 
 #descripcion-introduccion{
     float:left;
     margin-top: 50px;
-    width: 60%;
+    width: 40%;
 }
 
 #subtitulo{
@@ -94,4 +102,43 @@ h1{
   outline: black;
   background-size: 100%, 100%;
   background-color: grey;
+}
+.aside-noticias ul{
+   margin-top: 0px;
+   margin-right: 45px;
+   margin-bottom: 0px;
+   margin-left: 45px;
+   padding-top: 10pt;
+   padding-right: 0pt;
+   padding-bottom: 0pt;
+   padding-left: 0px;
+   list-style-type: none;
+   list-style-image: none;
+   list-style-position: outside;
+}
+
+.aside-noticias li{
+   border-top: 1px solid #d7d7d7;  
+   border-bottom: 1px solid #d7d7d7;   
+   border-left: 1px solid #d7d7d7;   
+   border-right: 1px solid #d7d7d7;   
+   border-radius: 15px;
+   padding: 10px 0 10px 4px;
+   font-size: 8pt;
+   margin-top: 0px;
+   margin-right: 0pt;
+   margin-bottom: 0px;
+   margin-left: 0pt;
+   background-color: #343a40;
+}
+
+.aside-noticias h6{
+   text-decoration: none;
+   color: white;
+}
+
+.aside-noticias h4{
+   text-decoration: none;
+   color: LightGrey     ;
+   font-size: small;
 }

@@ -8,6 +8,21 @@ function validar()
 	var correo = formulario.email.value;
 	var tlf = formulario.phone.value;
 	var dni = formulario.dni.value;
+	
+	
+	
+	tengo que poner aqui la fecha y utilizar esta funcion para mirar si esta entre los dias bien
+	function existeFecha(fecha){
+      var fechaf = fecha.split("/");
+      var day = fechaf[0];
+      var month = fechaf[1];
+      var year = fechaf[2];
+      var date = new Date(year,month,'0');
+      if((day-0)>(date.getDate()-0)){
+            return false;
+      }
+      return true;
+}
 
 	var expreg = /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
 	
