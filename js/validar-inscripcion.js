@@ -12,11 +12,10 @@ function validar()
 	var dentrada = formulario.diaentrada.value;
 	var dsalida = formulario.diasalida.value;
 	
-			
-			var fechae = dentrada.split("/");
-			var fechas = dsalida.split("/");
-			var daye = fechae[0];
-			var days = fechas[0];
+	var fechae = dentrada.split("/");
+	var fechas = dsalida.split("/");
+	var daye = fechae[0];
+	var days = fechas[0];
 			
 	var expreg = /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
 	
