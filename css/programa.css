@@ -24,6 +24,7 @@
 }
 
 .parraf{
+    margin-top: 30px;
    text-align: justify;
    width: 1000px;
     margin-left: 14%;
@@ -44,6 +45,10 @@
 
 #img-plano{
 	margin-left: 350px;
+}
+
+.logosProgramas{
+    width: 40px;
 }
 
 .logo{
