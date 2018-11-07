@@ -26,8 +26,9 @@
 .parraf{
    text-align: justify;
    width: 1000px;
-    margin-left: 10%;
+    margin-left: 14%;
     font-weight: bold;
+    margin-bottom: 40px;
 }
 
 #map{
