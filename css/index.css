@@ -43,23 +43,22 @@
 
 .aside-noticias{
     float:left;
-    margin-top: 20px;
-	margin-left: 70px;
-    width: 25%;
+    margin-top: 55px;
+    width: 30%;
     text-align: center;
 } 
 
 #imagen-introduccion{
     float:left;
     margin-top: 95px;
-    width: 30%;
+    width: 25%;
     text-align: center;
 }
 
 #descripcion-introduccion{
     float:left;
     margin-top: 50px;
-    width: 40%;
+    width: 45%;
 }
 
 .subtitulo{
@@ -132,12 +131,13 @@ h1{
    background-color: #343a40;
 }
 
-.aside-noticias h6{
+.aside-noticias h4{
    text-decoration: none;
    color: white;
+   font-size:1.5em;
 }
 
-.aside-noticias h4{
+.aside-noticias h6{
    text-decoration: none;
    color: LightGrey     ;
    font-size: small;
