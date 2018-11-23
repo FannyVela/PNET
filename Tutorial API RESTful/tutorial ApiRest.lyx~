@@ -1,0 +1,465 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+theorems-sec
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding 
+\font_roman "lmodern" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Creación de la API RESTful
+\end_layout
+
+\begin_layout Standard
+Para la creación de la API seguiremos los siguientes pasos:
+\end_layout
+
+\begin_layout Enumerate
+Creamos en el directorio donde se aloja nuestra página web una carpeta.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+apiCongreso
+\begin_inset Quotes erd
+\end_inset
+
+ en nuestro caso.
+\end_layout
+
+\begin_layout Enumerate
+Abrimos la consola en la carpeta y ejecutamos el siguiente comando:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small},breaklines=true,tabsize=4,basicstyle={\color{blue}\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+npm init
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado1.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De esta forma se nos creará un archivo llamado ''package.json
+\begin_inset Quotes erd
+\end_inset
+
+.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+A continuación instalamos las dependencias que se añadiran al archivo 
+\begin_inset Quotes eld
+\end_inset
+
+package.json
+\begin_inset Quotes erd
+\end_inset
+
+ con el siguiente comando:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small},breaklines=true,tabsize=4,basicstyle={\color{blue}\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+npm install express morgan body-parser --save
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado2.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Creamos un fichero 
+\begin_inset Quotes eld
+\end_inset
+
+index.js
+\begin_inset Quotes erd
+\end_inset
+
+ en la raíz, 
+\begin_inset Quotes eld
+\end_inset
+
+apiCongreso
+\begin_inset Quotes erd
+\end_inset
+
+ en nuestro caso.
+ Debe quedar de la siguiente forma (explicación en la captura de los diferentes
+ elementos):
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado3.png
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Creamos la carpeta ''routes'' en la raíz (apiCongreso)
+\end_layout
+
+\begin_layout Enumerate
+En su interior creamos el fichero 
+\begin_inset Quotes eld
+\end_inset
+
+attendees.js
+\begin_inset Quotes erd
+\end_inset
+
+ .
+ Este debe quedar tal que así:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado5.png
+	width 33text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pegado6.png
+	width 33text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pegado7.png
+	width 33text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Instalamos las dependencias CORS con el siguiente comando:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small},breaklines=true,tabsize=4,basicstyle={\color{blue}\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+npm install cors --save
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado4.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+En el fichero ''index.js'' incluimos la siguiente línea a continuación de
+ las demás dependencias:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small},breaklines=true,tabsize=4,basicstyle={\color{blue}\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+const cors = require('cors');
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Justo después añadimos la siguiente línea 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small},breaklines=true,tabsize=4,basicstyle={\color{blue}\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+app.use(cors());
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Ahora le daremos persistencia a nuestra API.
+ Para ello usaremos una bd.
+ En primer lugar creamos el fichero 
+\begin_inset Quotes eld
+\end_inset
+
+attendees-service.js
+\begin_inset Quotes erd
+\end_inset
+
+ en el directorio ''routes''.
+ Este debe quedar de la siguiente forma:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado8.png
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pegado9.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado10.png
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Editamos el fichero 
+\begin_inset Quotes eld
+\end_inset
+
+attendees.js
+\begin_inset Quotes erd
+\end_inset
+
+ eliminando el array de attendees y modificando los métodos quedando de
+ la siguiente forma:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+//FALTA CAPTURA
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Instalamos las dependencias MongoDB en la raíz (apiCongreso)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small},breaklines=true,tabsize=4,basicstyle={\color{blue}\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+npm install mongodb --save 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename pegado15.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Editamos el fichero 
+\begin_inset Quotes eld
+\end_inset
+
+index.js
+\begin_inset Quotes erd
+\end_inset
+
+ añadiendo lo siguiente:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small},breaklines=true,tabsize=4,basicstyle={\color{blue}\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+const attendeesService = require('./routes/attendees-service');
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Creación API RESTful (Cliente)
+\end_layout
+
+\end_body
+\end_document
