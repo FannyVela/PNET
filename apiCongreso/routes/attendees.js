@@ -92,7 +92,7 @@ router.delete('/', function (req, res) {
             });
         } else {
             res.status(200).send({
-                msg: 'Attendee deleted!'
+                msg: 'Attendees deleted!'
             });
         }
     });
