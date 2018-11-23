@@ -398,7 +398,41 @@ attendees.js
 
 \begin_deeper
 \begin_layout Standard
-//FALTA CAPTURA
+\begin_inset Graphics
+	filename pegado31.png
+	width 45theight%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pegado32.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado33.png
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pegado34.png
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -478,10 +512,6 @@ const attendeesService = require('./routes/attendees-service');
 \end_inset
 
 
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \end_deeper
@@ -515,10 +545,6 @@ GET ONE
 	filename pegado17.png
 	width 80text%
 
-\end_inset
-
-
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -627,10 +653,6 @@ DELETE ONE
 	filename pegado27.png
 	width 40text%
 
-\end_inset
-
-
-\begin_inset Newpage pagebreak
 \end_inset
 
 

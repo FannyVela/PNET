@@ -217,6 +217,10 @@ apiCongreso
 \end_deeper
 \begin_layout Enumerate
 Creamos la carpeta ''routes'' en la raíz (apiCongreso)
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Enumerate
@@ -474,6 +478,10 @@ const attendeesService = require('./routes/attendees-service');
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -481,43 +489,190 @@ const attendeesService = require('./routes/attendees-service');
 Comprobación del funcionamiento de los métodos mediante POSTMAN
 \end_layout
 
-\begin_layout Standard
-Partimos de los siguientes datos
+\begin_layout Itemize
+GET ALL
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 \begin_inset Graphics
 	filename pegado16.png
+	width 70text%
 
 \end_inset
 
 
 \end_layout
 
-\begin_layout Itemize
-GET ALL
-\end_layout
-
+\end_deeper
 \begin_layout Itemize
 GET ONE
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado17.png
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 POST
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado18.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado19.png
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado20.png
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 PUT
 \end_layout
 
-\begin_layout Itemize
-DELETE ALL
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado21.png
+	width 100text%
+
+\end_inset
+
+
 \end_layout
 
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado22.png
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado24.png
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 DELETE ONE
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado25.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado26.png
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado27.png
+	width 40text%
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+DELETE ALL
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado28.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado29.png
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado30.png
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Creación API RESTful (Cliente)
 \end_layout
