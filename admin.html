@@ -78,15 +78,28 @@
         </div>
       </div>
     </nav>
+		<h1>Administrar inscripcines</h1>
+
+
+	<input onclick="getInscripciones()" type="button" value="GET MOVIES" />
+	<input onclick="deleteInscripciones()" type="button" value="DELETE MOVIES" />
+	<br>
+	<input type="text" id="movieId">
+	<input onclick="getInscripcion($('#movieId').val())" type="button" value="GET MOVIE"/>
+	<input onclick="deleteInscripcion($('#movieId').val())" type="button" value="DELETE MOVIE"/>
+	<br>
+
+
+	<h3 id="resGetHello"></h3>
     
 		<div class="wrap-contact100">
 			<div class="contact100-form-title" style="background-image: url(../PNET/Imagenes/bg-01.jpg);">
 				<span class="contact100-form-title-1">
-					Inscribase para asistir
+					Modifique los datos que necesite
 				</span>
 
 				<span class="contact100-form-title-2">
-					Rellene la inscripción con sus datos.<br> Recuerde escoger su tarifa.
+					Recuerde rellenar el id en la parte superior.<br> 
 				</span>
 			</div>
 
@@ -156,7 +169,7 @@
 				</div>
 				
 				<div class="container-contact100-form-btn">
-					<input class="contact100-form-btn" onclick="postInscripcion($('#name').val(), $('#surname1').val(), $('#surname2').val(), $('#dni').val(), $('#email').val(), $('#phone').val(), $('#dias').val(), $('#diaentrada').val(), $('#diasalida').val(), $('#prensa').val())" type="button" value="ENVIAR"/>	
+					<input class="contact100-form-btn" onclick="putInscripcion($('#movieId').val(), $('#name').val(), $('#surname1').val(), $('#surname2').val(), $('#dni').val(), $('#email').val(), $('#phone').val(), $('#dias').val(), $('#diaentrada').val(), $('#diasalida').val(), $('#prensa').val())" type="button" value="ENVIAR"/>	
 				</div>
 			</form>
 		</div>
