@@ -26,10 +26,10 @@ function postInscripcion(nom, a1, a2, dni, mail, tel, n, d1, d2, p) {
 }
 
 function getInscripciones(){
- $.ajax({ 
+ $.ajax({
       type: "GET",
       url: "http://localhost:8080/attendees/",
-      success: function(data){        
+      success: function(data){
               $("#resGetHello").html(JSON.stringify(data));      },
       error:function(res){
               alert("ERROR: "+ res.statusText);  }
@@ -37,33 +37,25 @@ function getInscripciones(){
 }
 
 function getInscripcion(id){
- $.ajax({ 
+ $.ajax({
       type: "GET",
       url: "http://localhost:8080/attendees/" + id,
-      success: function(data){        
+      success: function(data){
               $("#resGetHello").html(JSON.stringify(data));      },
       error:function(res){
               alert("ERROR: "+ res.statusText);  }
   });
 }
 
-function putInscripcion(id, nom, a1, a2, dni, mail, tel, n, d1, d2, p){
- $.ajax({ 
+//function putInscripcion(id, nom, a1, a2, dni, mail, tel, n, d1, d2, p){
+function putInscripcion(id, nom){
+ $.ajax({
       type: "PUT",
       url: "http://localhost:8080/attendees/" + id,
       data:{
-            "name": nom,
-            "name1": a1,
-            "name2": a2,
-			"dni": dni,
-			"mail": mail,
-			"phone": tel,
-			"days": n,
-			"day1": d1,
-			"day2": d2,
-			"press": p
+            "name": nom
         },
-      success: function(data){        
+      success: function(data){
               $("#resGetHello").html(JSON.stringify(data));      },
       error:function(res){
               alert("ERROR: "+ res.statusText);  }
@@ -71,10 +63,10 @@ function putInscripcion(id, nom, a1, a2, dni, mail, tel, n, d1, d2, p){
 }
 
 function deleteInscripcion(id){
- $.ajax({ 
+ $.ajax({
       type: "DELETE",
       url: "http://localhost:8080/attendees/" + id,
-      success: function(data){        
+      success: function(data){
               $("#resGetHello").html(JSON.stringify(data));      },
       error:function(res){
               alert("ERROR: "+ res.statusText);  }
@@ -82,13 +74,12 @@ function deleteInscripcion(id){
 }
 
 function deleteInscripciones(){
- $.ajax({ 
+ $.ajax({
       type: "DELETE",
       url: "http://localhost:8080/attendees/",
-      success: function(data){        
+      success: function(data){
               $("#resGetHello").html(JSON.stringify(data));      },
       error:function(res){
               alert("ERROR: "+ res.statusText);  }
   });
 }
-

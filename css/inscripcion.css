@@ -3,30 +3,30 @@
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../Fuentes/poppins/Poppins-Regular.ttf'); 
+  src: url('../Fuentes/poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('../Fuentes/poppins/Poppins-Medium.ttf'); 
+  src: url('../Fuentes/poppins/Poppins-Medium.ttf');
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../Fuentes/poppins/Poppins-Bold.ttf'); 
+  src: url('../Fuentes/poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
   font-family: Poppins-SemiBold;
-  src: url('../Fuentes/poppins/Poppins-SemiBold.ttf'); 
+  src: url('../Fuentes/poppins/Poppins-SemiBold.ttf');
 }
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
 * {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
@@ -142,7 +142,7 @@ button:hover {
     margin-left: 350px;
     margin-top: 150px;
     margin-bottom: 80px;
- 
+
 }
 
 /*==================================================================
@@ -211,7 +211,7 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 43px 88px 57px 190px;
-  
+
 }
 
 
@@ -338,8 +338,10 @@ textarea.input100 {
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-    
+
    margin-left: 50px;
+
+   cursor: pointer;
 }
 
 .contact100-form-btn i {
@@ -458,17 +460,6 @@ textarea.input100 {
 	   margin-left: 400px;
 }
 
-.principal {
-  background:#EBF0F6;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
-    margin-left: 350px;
-    margin-top: 150px;
-    margin-bottom: 10px;
-	margin-right: 350px;
- 
-}
 
 .entradaId {
   background: white;
