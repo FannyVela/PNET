@@ -67,28 +67,33 @@
                     </div>
                 </li>
                      
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="inscripcion.html">INSCRIPCIÓN</a>
                 </li>
                      
                 <li class="nav-item">
                     <a class="nav-link" href="contacto.html">CONTACTO</a>
                 </li>
+				<li class="nav-item active">
+                    <a class="nav-link" href="admin.html">ADMINISTRAR</a>
+                </li>
             </ul> 
         </div>
       </div>
     </nav>
+	
+	<div class="principal">
 		<h1>Administrar inscripcines</h1>
+		<br>
+	
+		<input onclick="getInscripciones()" type="button" value="Listar inscripciones" />
+		<input onclick="deleteInscripciones()" type="button" value="Eliminar TODAS las inscripcines" />
+		<br><br>
+		<input onclick="getInscripcion($('#movieId').val())" type="button" value="Obtener inscripcion"/>
+		<input onclick="deleteInscripcion($('#movieId').val())" type="button" value="Eliminar inscripcion"/>
+		<input class="entradaId" type="text" id="movieId">
 
-
-	<input onclick="getInscripciones()" type="button" value="GET MOVIES" />
-	<input onclick="deleteInscripciones()" type="button" value="DELETE MOVIES" />
-	<br>
-	<input type="text" id="movieId">
-	<input onclick="getInscripcion($('#movieId').val())" type="button" value="GET MOVIE"/>
-	<input onclick="deleteInscripcion($('#movieId').val())" type="button" value="DELETE MOVIE"/>
-	<br>
-
+	</div>
 
 	<h3 id="resGetHello"></h3>
     
@@ -174,9 +179,6 @@
 			</form>
 		</div>
 		<h3 id="resGetHello"></h3>
-		<div  class="table">
-			<img id="Tabla" src="Imagenes/tabla.png" alt="Tabla_precios" >
-		</div>
 
     <footer class="py-5 bg-dark">
       <div class="container footer">
