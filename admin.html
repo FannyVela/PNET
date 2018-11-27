@@ -85,22 +85,98 @@
 
     <div class="contenedor">
       <h1 class= "titulo">Administración</h1><br>
-      <h5 style="margin-left:60px;">Escoja una opción</h5>
-      <div id="botones">
-        	<input class="boton" onclick="getInscripciones()" type="button" value="Mostrar asistentes" />
-          <input class="boton" style="margin-left:40px" onclick="deleteInscripciones()" type="button" value="Eliminar asistentes" />
-          <br><br><br><br>
 
-        <!--  <div style="float:left; width:40%; margin-left:19%;"> -->
-            <h6>Identificador </h6>
-            <input type="text" id="id"><br>
-            <input class="boton" style="margin-left:20px;" onclick="getInscripcion($('#id').val())" type="button" value="Obtener asistente"/>
+      <div style="float:left; width:50%;">
+        <br><br>
+        <h5 style="margin-left:100px;">Escoja una opción</h5>
+        <div id="botones">
+            <input class="boton" style="margin-left:100px" onclick="getInscripciones()" type="button" value="Mostrar asistentes" />
+            <input class="boton" style="margin-left:40px" onclick="deleteInscripciones()" type="button" value="Eliminar asistentes" />
+            <br><br><br><br><br>
+
+            <h6 style="margin-left:90px;">Identificador </h6>
+            <input style="margin-left:90px;" class="boxtext" type="text" id="id"><br>
+            <input class="boton" style="margin-left:100px;" onclick="getInscripcion($('#id').val())" type="button" value="Obtener asistente"/>
             <input class="boton" style="margin-left:40px" onclick="deleteInscripcion($('#id').val())" type="button" value="Eliminar asistente"/>
-    <!--      </div> -->
 
+            <br><br><br><br><br>
+            <h5 style="margin-left:90px;">Actualizar datos de un asistente</h5>
 
-  	<h3 id="resGetHello"></h3>
+            <div class="formulario">
+
+              <form class="contact100-form" name = "formulario" onsubmit="return validar();">
+
+                <div class="wrap-input100 " >
+                     <label for="name" class="label-input100">* ID:</label>
+                     <input class="input100" type="text" name="name" id="ident" placeholder="Introduzca el identificador">
+                  <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 " >
+                               <label for="name" class="label-input100">Nombre:</label>
+                     <input class="input100" type="text" name="name" id="name" placeholder="Modificar nombre" >
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 " >
+                  <label for="surname1" class="label-input100">Apellido 1:</label>
+                     <input class="input100" type="text" name="surname1" id="surname1" placeholder="Modificar primer apellido">
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100">
+                            <label for="surname2" class="label-input100">Apellido 2:</label>
+                     <input class="input100" type="text" name="surname2" id="surname2" placeholder="Modificar segundo apellido" >
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 " >
+                            <label for="dni" class="label-input100">DNI/Nº Pasaporte:</label>
+                     <input class="input100" type="text" name="dni" id="dni" placeholder="Modificar dni">
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100" >
+                            <label for="email" class="label-input100">Correo:</label>
+                     <input class="input100" type="text" name="email" id="email" placeholder="Modificar correo: name@example.com">
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 ">
+                            <label for="phone" class="label-input100">Teléfono:</label>
+                     <input class="input100" type="text" name="phone" id="phone" placeholder="Modificar número de teléfono.">
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 " >
+                    <label for= "dias" class="label-input100">Nº de días:</label>
+                     <select name="dias" id="dias">
+                       <option value="none">None</option>
+                      <option value="1">1 Día</option>
+                      <option value="2">2 Días</option>
+                      <option value="3">3 Días</option>
+                    </select>
+                  <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 ">
+                            <label for="prensa" class="label-input100">Prensa</label>
+                     <input type="checkbox" class="input100" name="prensa" id="prensa" >
+                  <span class="focus-input100"></span>
+                </div>
+
+                	<input style="margin-left:50px;" class="boton" onclick="postInscripcion($('#ident').val() $('#name').val(), $('#surname1').val(), $('#surname2').val(), $('#dni').val(), $('#email').val(), $('#phone').val(), $('#dias').val(), $('#prensa').val())" type="button" value="Actualizar asistente"/>
+
+            <!--			<input class="contact100-form-btn" onclick="postInscripcion($('#name').val(), $('#surname1').val(), $('#surname2').val(), $('#dni').val(), $('#email').val(), $('#phone').val(), $('#dias').val(), $('#diaentrada').val(), $('#diasalida').val(), $('#prensa').val())" type="button" value="ENVIAR"/>	-->
+
+              </form>
+            </div>
       </div>
+
+      	<h3 id="resGetHello"></h3>
+      </div>
+        <div style="float:left; width:30%;">
+          <h1>HOLA</h1>
+        </div>
 
     </div>
     <br><br>
@@ -109,7 +185,7 @@
 
 
 		<br><br>
-		<input onclick="deleteInscripcion($('#movieId').val())" type="button" value="Eliminar inscripcion"/>
+
 		<input class="entradaId" type="text" id="movieId">
     	<h3 id="resGetHello"></h3>
 

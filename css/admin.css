@@ -68,7 +68,7 @@
 	top:1px;
 }
 
-input[type=text]{
+.boxtext{
     width: 240px;
     height: 42px;
     margin-top: 25px;
@@ -91,6 +91,22 @@ input[type=text]{
     -moz-transition: all .2s;
     -webkit-transition: all .2s;
     -ms-transition: all .2s;
+
+}
+
+.formulario{
+    width: 670px;
+    background:#EBF0F6;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+      margin-left: 50px;
+      margin-top: 50px  ;
+      margin-bottom: 80px;
+
+  }
+
+
 
 }
 
