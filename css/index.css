@@ -22,28 +22,10 @@
     
 }
 
-
-
 #titulo{
-	float:left;
     font-size: 24px; 
     text-align: center;
-	margin-top: 50px;
 }
-#descripcion-introduccion{
-    float:left;
-    margin-top: 50px;
-    width: 45%;
-}
-.aside-noticias{
-    align:right;
-    margin-top: 55px;
-    width: 30%;
-    text-align: center;
-} 
-
-
-
 
 .texto-titulo{
     margin:0;
@@ -59,7 +41,12 @@
     z-index: 1;
 } 
 
-
+.aside-noticias{
+    float:left;
+    margin-top: 55px;
+    width: 30%;
+    text-align: center;
+} 
 
 #imagen-introduccion{
     float:left;
@@ -68,6 +55,11 @@
     text-align: center;
 }
 
+#descripcion-introduccion{
+    float:left;
+    margin-top: 50px;
+    width: 45%;
+}
 
 .subtitulo{
     color: #990000;

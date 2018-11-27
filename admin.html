@@ -68,29 +68,47 @@
                     </div>
                 </li>
 
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="inscripcion.html">INSCRIPCIÓN</a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="contacto.html">CONTACTO</a>
                 </li>
-				<li class="nav-item">
-                    <a class="nav-link" href="admin.html">ADMINISTRAR</a>
+				<li class="nav-item active">
+                    <a class="nav-link" href="admin.html">ADMINISTRACIÓN</a>
                 </li>
             </ul>
         </div>
       </div>
     </nav>
 
-    <div class="principal" >
-		<h1>Administrar inscripciones</h1>
-		<br>
+    <div class="contenedor">
+      <h1 class= "titulo">Administración</h1><br>
+      <h5 style="margin-left:60px;">Escoja una opción</h5>
+      <div id="botones">
+        	<input class="boton" onclick="getInscripciones()" type="button" value="Mostrar asistentes" />
+          <input class="boton" style="margin-left:40px" onclick="deleteInscripciones()" type="button" value="Eliminar asistentes" />
+          <br><br><br><br>
 
-		<input onclick="getInscripciones()" type="button" value="Listar inscripciones" />
-		<input  onclick="deleteInscripciones()" type="button" value="Eliminar TODAS las inscripcines" />
+        <!--  <div style="float:left; width:40%; margin-left:19%;"> -->
+            <h6>Identificador </h6>
+            <input type="text" id="id"><br>
+            <input class="boton" style="margin-left:20px;" onclick="getInscripcion($('#id').val())" type="button" value="Obtener asistente"/>
+            <input class="boton" style="margin-left:40px" onclick="deleteInscripcion($('#id').val())" type="button" value="Eliminar asistente"/>
+    <!--      </div> -->
+
+
+  	<h3 id="resGetHello"></h3>
+      </div>
+
+    </div>
+    <br><br>
+
+  <!--  <div class="principal" >
+
+
 		<br><br>
-		<input onclick="getInscripcion($('#movieId').val())" type="button" value="Obtener inscripcion"/>
 		<input onclick="deleteInscripcion($('#movieId').val())" type="button" value="Eliminar inscripcion"/>
 		<input class="entradaId" type="text" id="movieId">
     	<h3 id="resGetHello"></h3>
@@ -115,7 +133,7 @@
    ALGO<br>
    <br>
    <br>
-   <br>
+   <br> -->
 
 
 
