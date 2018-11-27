@@ -12,6 +12,8 @@
     <script src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="apiCongresoCliente/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript"  src="apiCongresoCliente/js/wsinvocations.js"></script>
+  <script type="text/javascript" src="js/validar-inscripcion.js"></script>
+
 
     <!--css local-->
     <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -97,29 +99,31 @@
             <h6 style="margin-left:90px;">Identificador </h6>
             <input style="margin-left:90px;" class="boxtext" type="text" id="id"><br>
             <input class="boton" style="margin-left:100px;" onclick="getInscripcion($('#id').val())" type="button" value="Obtener asistente"/>
-            <input class="boton" style="margin-left:40px" onclick="deleteInscripcion($('#id').val())" type="button" value="Eliminar asistente"/>
+
+            <input class="boton" style="margin-left:40px" onclick="deleteInscripcion($('#id').val())" type="button" value="Eliminar asistente"/><br>
 
             <br><br><br><br><br>
-            <h5 style="margin-left:90px;">Actualizar datos de un asistente</h5>
+        <h5 style="margin-left:90px;">Actualizar datos de un asistente</h5><br>
+        <h6 style="margin-left:90px;">*Nota: Recuerde rellenar todos los campos</h6>
 
-            <div class="formulario">
+            <div id="formulario">
 
               <form class="contact100-form" name = "formulario" onsubmit="return validar();">
 
                 <div class="wrap-input100 " >
                      <label for="name" class="label-input100">* ID:</label>
-                     <input class="input100" type="text" name="name" id="ident" placeholder="Introduzca el identificador">
+                     <input class="input100" type="text" name="name" id="ident" placeholder="Introduzca el identificador" required>
                   <span class="focus-input100"></span>
                 </div>
                 <div class="wrap-input100 " >
-                               <label for="name" class="label-input100">Nombre:</label>
-                     <input class="input100" type="text" name="name" id="name" placeholder="Modificar nombre" >
+                               <label for="name" class="label-input100">*Nombre:</label>
+                     <input class="input100" type="text" name="name" id="name" placeholder="Modificar nombre" required>
                   <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 " >
-                  <label for="surname1" class="label-input100">Apellido 1:</label>
-                     <input class="input100" type="text" name="surname1" id="surname1" placeholder="Modificar primer apellido">
+                  <label for="surname1" class="label-input100">*Apellido 1:</label>
+                     <input class="input100" type="text" name="surname1" id="surname1" placeholder="Modificar primer apellido" required>
                   <span class="focus-input100"></span>
                 </div>
 
@@ -130,27 +134,26 @@
                 </div>
 
                 <div class="wrap-input100 " >
-                            <label for="dni" class="label-input100">DNI/Nº Pasaporte:</label>
-                     <input class="input100" type="text" name="dni" id="dni" placeholder="Modificar dni">
+                            <label for="dni" class="label-input100">*DNI/Nº Pasaporte:</label>
+                     <input class="input100" type="text" name="dni" id="dni" placeholder="Modificar dni"required>
                   <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100" >
-                            <label for="email" class="label-input100">Correo:</label>
-                     <input class="input100" type="text" name="email" id="email" placeholder="Modificar correo: name@example.com">
+                            <label for="email" class="label-input100">*Correo:</label>
+                     <input class="input100" type="text" name="email" id="email" placeholder="Modificar correo: name@example.com"required>
                   <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 ">
-                            <label for="phone" class="label-input100">Teléfono:</label>
-                     <input class="input100" type="text" name="phone" id="phone" placeholder="Modificar número de teléfono.">
+                            <label for="phone" class="label-input100">*Teléfono:</label>
+                     <input class="input100" type="text" name="phone" id="phone" placeholder="Modificar número de teléfono."required>
                   <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100 " >
-                    <label for= "dias" class="label-input100">Nº de días:</label>
+                    <label for= "dias" class="label-input100">*Nº de días:</label>
                      <select name="dias" id="dias">
-                       <option value="none">None</option>
                       <option value="1">1 Día</option>
                       <option value="2">2 Días</option>
                       <option value="3">3 Días</option>
@@ -159,14 +162,12 @@
                 </div>
 
                 <div class="wrap-input100 ">
-                            <label for="prensa" class="label-input100">Prensa</label>
+                            <label for="prensa" class="label-input100">*Prensa</label>
                      <input type="checkbox" class="input100" name="prensa" id="prensa" >
                   <span class="focus-input100"></span>
                 </div>
 
-                	<input style="margin-left:50px;" class="boton" onclick="postInscripcion($('#ident').val(), $('#name').val(), $('#surname1').val(), $('#surname2').val(), $('#dni').val(), $('#email').val(), $('#phone').val(), $('#dias').val(), $('#prensa').val())" type="button" value="Actualizar asistente"/>
-
-            <!--			<input class="contact100-form-btn" onclick="postInscripcion($('#name').val(), $('#surname1').val(), $('#surname2').val(), $('#dni').val(), $('#email').val(), $('#phone').val(), $('#dias').val(), $('#diaentrada').val(), $('#diasalida').val(), $('#prensa').val())" type="button" value="ENVIAR"/>	-->
+                	<input style="margin-left:50px;" class="boton" onclick="putInscripcion($('#ident').val(), $('#name').val(), $('#surname1').val(), $('#surname2').val(), $('#dni').val(), $('#email').val(), $('#phone').val(), $('#dias').val(), $('#prensa').val())" type="button" value="Actualizar asistente"/>
 
               </form>
             </div>
@@ -175,54 +176,14 @@
 
       </div>
         <div style="float:left; width:50%;">
+
           <br><br>
-          <h5>Resultado</h5>
-          <h3 id="resGetHello"></h3>
+          <h5>Resultado</h5><br><br>
+          <h3 id="resul"></h3>
         </div>
 
     </div>
     <br><br>
-
-  <!--  <div class="principal" >
-
-
-		<br><br>
-
-		<input class="entradaId" type="text" id="movieId">
-    	<h3 id="resGetHello"></h3>
-
-
-      <h1>Formulario asistentes</h1>
-      <form>
-          Id : <input type="text" id="id">
-        Nombre: <input type="text" id="nombre">
-
-
-
-        <div class="container-contact100-form-btn">
-          <input class="contact100-form-btn" onclick="putInscripcion($('#id').val(), $('#nombre').val())" type="button" value="ENVIAR"/>
-        </div>
-      </form>
-
-   ALGO<BR>
-   ALGO ALGO<BR>
-   ALGO<br>
-   ALGO<br>
-   ALGO<br>
-   <br>
-   <br>
-   <br> -->
-
-
-
-
-
-
-
-
-
-
-
 
 	</div>
 

@@ -94,7 +94,7 @@
 
 }
 
-.formulario{
+#formulario{
     width: 670px;
     background:#EBF0F6;
     border-radius: 10px;
@@ -106,8 +106,10 @@
 
   }
 
-
-
+#resul{
+  text-align: left;
+  margin-left: 275px;
+  font-size: 17px;
 }
 
 
