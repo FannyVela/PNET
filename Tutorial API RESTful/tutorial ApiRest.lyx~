@@ -398,7 +398,41 @@ attendees.js
 
 \begin_deeper
 \begin_layout Standard
-//FALTA CAPTURA
+\begin_inset Graphics
+	filename pegado31.png
+	width 45theight%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pegado32.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado33.png
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pegado34.png
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -478,10 +512,6 @@ const attendeesService = require('./routes/attendees-service');
 \end_inset
 
 
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \end_deeper
@@ -515,10 +545,6 @@ GET ONE
 	filename pegado17.png
 	width 80text%
 
-\end_inset
-
-
-\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -630,10 +656,6 @@ DELETE ONE
 \end_inset
 
 
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \end_deeper
@@ -677,5 +699,438 @@ DELETE ALL
 Creación API RESTful (Cliente)
 \end_layout
 
+\begin_layout Standard
+Para la creacion de la segunda parte del cliente de la API seguiremos los
+ siguientes pasos utilizando AJAX y jQuery:
+\end_layout
+
+\begin_layout Enumerate
+Creamos en el directorio donde se aloja nuestra pagina web una carpeta llamada
+ “apiCongresoCliente” en nuestro caso.
+\end_layout
+
+\begin_layout Enumerate
+Dentro de esta carpeta creamos otra llamada “js” e incluimos en el interior
+ de esta un archivo .js llamado wsinvocations.js.
+\end_layout
+
+\begin_layout Enumerate
+Incluimos tambien dentro de esta carpeta otro llamado “jquery-3.3.1.min.js”
+ en el que añadamos el codigo existente en el siguiente enlace: https://code.jque
+ry.com/jquery- 3.3.1.min.js
+\end_layout
+
+\begin_layout Enumerate
+Tras esto creamos un archivo HTML desde el que utilizamos nuestra API, normalmen
+te se ubicara en la carpeta “apiCongresoCliente”, en nuestro caso lo llamaremos
+ admin.HTML y lo ubicaremos a la misma altura que el resto de carpetas.
+ (Cabe señalar que en nuestro caso utilizaremos la API tanto desde admin.HTML
+ como desde inscripcio.HTML).
+\end_layout
+
+\begin_layout Enumerate
+En este punto comenzaremos a implementar las funciones que realizan las
+ acciones sobre los datos:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+POST:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+En la inscripcion.HTML incluimos los recuadros de texto y demas entradas
+ de datos para introducir la inscripcion, junto con un boton que envie el
+ formulario (Para utilizarlo se introducen los datos y se pulsa el boton):
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename POSTHTML1.PNG
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename POSTHTML2.PNG
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+-En wsinvocations.js incluimos la funcion para introducir los datos en la
+ BD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename POSTjs.PNG
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Comprobación:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado35.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado36.png
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+GET (ALL): 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+En la admin.HTML incluimos un boton que devuelva todas las inscripciones
+ almacenadas (Para utilizarlo basta con pulsa el boton):
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename GETHTML.PNG
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+En wsinvocations.js incluimos la funcion para acceder a los datos en la BD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename GETjs.PNG
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Comprobación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado37.png
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+GET (ONE):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+En la admin.HTML incluimos el recuadro de texto para introducir el ID y un
+ boton que devuelva la inscripcion de la persona con ese ID (Para utilizarlo
+ se introduce el ID y se pulsa el boton):
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename GETGETHTML.PNG
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+En wsinvocations.js incluimos la funcion para acceder a los datos en la BD:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename GETGETjs.PNG
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Comprobación
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado38.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+PUT:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+En la admin.HTML incluimos los recuadros de texto y demas entradas de datos
+ para introducir la inscripcion actualizada, junto con un boton que envie
+ el formulario (Para utilizarlo se introducen los datos actualizados y se
+ pulsa el boton)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename PUTHTML1.PNG
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename PUTHTML2.PNG
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+En wsinvocations.js incluimos la funcion para actualizar los datos en la
+ BD
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename PUTjs.PNG
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Comprobación:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+\begin_inset Graphics
+	filename pegado39.png
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado40.png
+	width 35text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado41.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+DELETE (ALL):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+En la admin.HTML incluimos un boton que elimine todas las inscripciones almacenad
+as (Para utilizarlo basta con pulsa el boton):
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename DELHTML.PNG
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+-En wsinvocations.js incluimos la funcion para eliminar los datos de la BD
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename DELjs.PNG
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Comprobación:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Al eliminar a todos, nos aparecerá un mensaje de éxito.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+DELETE (ONE):
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+En la admin.HTML incluimos el recuadro de texto para introducir el ID y un
+ boton que elimine la inscripcion de la persona con ese ID (Para utilizarlo
+ se introduce el ID y se pulsa el boton)
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename DELDELHTML.PNG
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+-En wsinvocations.js incluimos la funcion para eliminar los datos de la BD
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename DELDELjs.PNG
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Comprobación:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename pegado42.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
 \end_body
 \end_document

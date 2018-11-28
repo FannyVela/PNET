@@ -15,7 +15,8 @@ function postInscripcion(nom, s1, s2, dni, email, tel, days, prensa) {
       			"prensa": prensa
         }),
         success: function(data) {
-            $("#resul").html(data);
+          alert("Inscripción realizada con éxito");
+        /*    $("#resul").html(data); */
         },
         error: function(res) {
             alert("ERROR " + res.statusText);
