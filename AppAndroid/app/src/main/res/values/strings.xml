@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Congreso SIR 2019</string>
+    <string name="btn_add">Añadir asistente</string>
+    <string name="btn_edit">Editar</string>
+    <string name="btn_delete">Eliminar</string>
+    <string name="description">Obligatorio rellenar todos los campos</string>
+    <string name="nom">Nombre Ej: María</string>
+    <string name="surname">Apellido Ej: López</string>
+    <string name="dni">DNI Ej: 12345678A</string>
+    <string name="fNacim"> Fecha de nacimiento</string>
+    <string name="fInsc">Fecha de inscripción</string>
+    <string name="email">E-mail Ej: maria@gmail.com</string>
+    <string name="phone">Phone Ej: 605432345</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+</resources>

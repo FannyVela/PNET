@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="127dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Programa"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/day1"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_below="@+id/titulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="DIA 1 (7 de Mayo de 2019)"
+        android:textColor="#5395DC"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/day2"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_below="@+id/day1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="DIA 2 (8 de Mayo de 2019)"
+        android:textColor="#5395DC"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/day3"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_below="@+id/day2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="DIA 3 (9 de Mayo de 2019)"
+        android:textColor="#5395DC"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>

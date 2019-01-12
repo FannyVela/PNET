@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlFcontainer"
+    android:layout_width="wrap_content"
+    android:layout_height="185dp"
+    android:orientation="vertical"
+    android:background="@drawable/fondo2">
+
+    <RelativeLayout
+        android:id="@+id/rlContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_component3x"
+        android:layout_marginRight="@dimen/space_component3x"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/round_outline">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cvContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/llContainer"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#294A55"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="114dp"
+                    android:layout_height="67dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="-34dp"
+                    android:src="@drawable/iconattendee" />
+
+
+                <TextView
+                    android:id="@+id/nameSurname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/img"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="22dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Fanny Chunyan Vela"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/dni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nameSurname1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="73dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="77179408X"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/abc_text_size_small_material" />
+
+                <Button
+                    android:id="@+id/btnShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="118dp"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#fff"
+                    android:background="#790808"
+                    android:text="      + info" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

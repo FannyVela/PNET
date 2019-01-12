@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo2"
+    tools:context=".AttendeeActivity"
+    tools:showIn="@layout/activity_attendee">
+
+    <TextView
+        android:id="@+id/nameSurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Nombre"
+        android:textColor="#790808"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Adni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameSurn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="28dp"
+        android:text="DNI: "
+        android:textColor="#000"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/dataDni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Adni"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="13dp"
+        android:text="1234567A"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/fchNacim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Adni"
+        android:layout_alignStart="@+id/Adni"
+        android:layout_marginTop="16dp"
+        android:textColor="#000"
+        android:text="Fecha de nacimiento: "
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/dataNacim"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fchNacim"
+        android:layout_alignParentEnd="true"
+        android:text="01-05-2019"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/fchInsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fchNacim"
+        android:layout_alignStart="@+id/Adni"
+        android:layout_marginTop="18dp"
+        android:textColor="#000"
+        android:text="Fecha de inscripción: "
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/dataInsc"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/fchInsc"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="4dp"
+        android:text="01-05-2019"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/Aemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fchInsc"
+        android:layout_alignStart="@+id/Adni"
+        android:textColor="#000"
+        android:layout_marginTop="17dp"
+        android:text="E-mail: "
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/dataEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/Aemail"
+        android:layout_alignEnd="@id/dataDni"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="30dp"
+        android:inputType="textEmailAddress"
+        android:text="nombre@gmail.com"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/APhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Aemail"
+        android:textColor="#000"
+        android:layout_alignStart="@+id/Adni"
+        android:layout_marginTop="17dp"
+        android:text="Teléfono: "
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/dataPhone"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dataDni"
+        android:layout_alignTop="@+id/APhone"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="13dp"
+        android:text="605443322"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Adni"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="84dp"
+        android:background="#790808"
+        android:text="@string/btn_edit"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_edit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="34dp"
+        android:background="#790808"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:text="@string/btn_delete" />
+
+
+</RelativeLayout>
